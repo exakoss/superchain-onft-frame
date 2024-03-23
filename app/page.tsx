@@ -63,7 +63,7 @@ export default async function Home({ searchParams }: NextServerPageProps) {
   const currentChain = (state.pageIndex === 0) ? 'Mint on Base' : ' Mint on Zora'
   const nextChain = (state.pageIndex === 0) ? 'Switch to Zora' : 'Switch to Base'
   const txTarget = (state.pageIndex === 0) ? '/txdatabase' : '/txdatazora'
-  const scanTarget = (state.pageIndex === 0) ? `https://basescan.org/tx/${frameMessage?.transactionId}` : `https://zorascan.xyz/tx/${frameMessage?.transactionId}`
+  const scanTarget = (state.pageIndex === 1) ? `https://basescan.org/tx/${frameMessage?.transactionId}` : `https://zorascan.xyz/tx/${frameMessage?.transactionId}`
 
   //If there was a mint transaction, return a screen with a hash and block explorer link
   if (frameMessage?.transactionId) {
