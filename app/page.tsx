@@ -88,7 +88,7 @@ export default async function Home({ searchParams }: NextServerPageProps) {
         </FrameButton>
         <FrameButton
           action="link"
-          target={`https://omni-x.io/drops`}
+          target={`https://omni-x.io/`}
         >
           More on Omni X
         </FrameButton>
